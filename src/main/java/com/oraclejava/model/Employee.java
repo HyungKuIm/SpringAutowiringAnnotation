@@ -1,13 +1,19 @@
 package com.oraclejava.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Employee {
 
+    @Value("133313")
     private Integer employeeId;
+
+    @Value("Sean Murphy")
     private String employeeName;
 
-    @Autowired(required = false)
+    @Autowired
     private JuminCard juminCard;
 
     public Integer getEmployeeId() {

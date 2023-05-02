@@ -7,14 +7,6 @@
                 http://www.springframework.org/schema/context
                 http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config />
-    <bean id="employee" class="com.oraclejava.model.Employee">
-        <property name="employeeId" value="43" />
-        <property name="employeeName" value="Sean Murphy" />
-    </bean>
 
-<!--    <bean id="juminCard" class="com.oraclejava.model.JuminCard">-->
-<!--        <property name="juminNo" value="760101-1234567" />-->
-<!--        <property name="juminName" value="신머피" />-->
-<!--    </bean>-->
+    <context:component-scan base-package="com.oraclejava.model" />
 </beans>
